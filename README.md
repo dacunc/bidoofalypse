@@ -3,10 +3,10 @@
 Are you ready for bidoof apocalypse? Bidoof come to invade the whole internet. Use this simple project to hatch some bidoof and conquire the world.
 ## Installation
 
-Simply add [bidoofalypse.js](https://github.com/dacunc/bidoofalypse/blob/main/bidoofalypse.js) to your project. Then add this file to your html:
+Simply add this file to your html:
 
 ```html
-<script type="text/javascript" src="./your-path/bidoofalypse.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/dacunc/bidoofalypse/bidoofalypse.min.js"></script>
 ```
 
 ## Usage
