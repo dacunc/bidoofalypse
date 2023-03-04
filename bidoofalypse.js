@@ -42,8 +42,17 @@ const bidoof = {
     leak: (pkmn = bidoof.all) => pkmn.forEach((pkmn) => bidoof.outside(pkmn)),
     freeze: () => clearInterval(bidoof.gang),
     outside: (pkmn) => {
-        pkmn.style.top = `${-pkmn.height}px`;
-        pkmn.style.left = `${random(window.innerWidth - pkmn.width)}px`;
+        const { innerWidth, innerHeight } = window;
+        const { width, height } = pkmn.getBoundingClientRect();
+        const directions = [
+            { top: -height, left: random(innerWidth - width) },
+            { top: random(innerHeight - height), left: -width },
+            { top: innerHeight, left: random(innerWidth - width) },
+            { top: random(innerHeight - height), left: innerWidth },
+        ];
+        const randomDirection = directions[random(directions.length)];
+        pkmn.style.top = `${randomDirection.top}px`;
+        pkmn.style.left = `${randomDirection.left}px`;
     },
     inside: (pkmn) => {
         pkmn.style.top = `${random(window.innerHeight - pkmn.height)}px`;
