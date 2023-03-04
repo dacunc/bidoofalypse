@@ -9,7 +9,7 @@ const bidoof = {
             'https://www.pokepedia.fr/images/2/22/Sprite_0399_%E2%99%82_NB.png',
             'https://www.pokepedia.fr/images/1/13/Sprite_0399_%E2%99%82_dos_NB.png',
             'https://www.pokepedia.fr/images/c/c9/Sprite_0399_%E2%99%82_chromatique_NB.png',
-            'https://www.pokepedia.fr/Fichier:Sprite_0399_%E2%99%80_chromatique_dos_NB.png'
+            'https://www.pokepedia.fr/images/9/96/Sprite_0399_%E2%99%80_chromatique_dos_NB.png'
         ],
         size: 100,
         speedInterval: [300, 3000],
